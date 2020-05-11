@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    var modelName = UIDevice.current.name
+    var askMeImages = [UIImage.init(named: "yes"),UIImage.init(named: "notToday"),UIImage.init(named: "notSure"),UIImage.init(named: "maybe"),UIImage.init(named: "askMeNicely"),UIImage.init(named: "askMeLater"),UIImage.init(named: "askGod"),UIImage.init(named: "notToday")]
+    
+    @IBOutlet weak var askMeImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        askMeImageView.image =  #imageLiteral(resourceName: "askMe.png")
     }
-
-
+    
+   
+    @IBAction func tryMeButton(_ sender: Any) {
+        askMeImageView.image = askMeImages.randomElement()!!
+    }
+    
 }
 
