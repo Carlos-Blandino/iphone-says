@@ -1,2 +1,2 @@
 # iPhone Says
-Ask your iPhone a yes/no question and your iPhone will respond properly.
+Ask your iPhone a yes/no question and your iPhone will say... what you need to hear.
